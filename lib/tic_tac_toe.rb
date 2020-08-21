@@ -73,6 +73,6 @@ class TicTacToe
   end
   
   def over?
-    draw? || 
+    draw? || won?
   end 
 end 
