@@ -31,12 +31,13 @@ class TicTacToe
   end
   
   def turn
-    puts "Please enter 1-9:"
-    input = gets
-    index = input_to_index(input)
+    puts "Pick a position between 1-9"
+    user_input = gets
+    index = input_to_index(user_input)
+
     if valid_move?(index)
-      move(index)
-      display_board
+      token = current_player
+      move(index, token)
     else
       turn
     end
