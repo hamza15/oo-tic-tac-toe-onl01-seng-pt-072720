@@ -57,9 +57,10 @@ class TicTacToe
     end
   end
   
-  def won
-    WIN_COMBINATIONS.any do |index|
-      index.each do |combo|
-        if index[combo] == 'X' && 
-  
+  def won?
+    WIN_COMBINATIONS.any? do |i|
+      if position_taken?(i[0]) && @board[i[0]] == @board[i[1]] && @board[i[1]] == @board[i[2]]
+      return i
+      end
+    end
 end 
