@@ -58,7 +58,7 @@ class TicTacToe
   end
   
   def won
-    WIN_COMBINATIONS.each do |index|
+    WIN_COMBINATIONS.any do |index|
       index.each do |combo|
         if index[combo] == 'X' && 
   
