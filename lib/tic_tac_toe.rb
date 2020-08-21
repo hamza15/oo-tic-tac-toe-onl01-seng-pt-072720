@@ -60,6 +60,7 @@ class TicTacToe
       if position_taken?(i[0]) && @board[i[0]] == @board[i[1]] && @board[i[1]] == @board[i[2]]
       retunr i
       end
+    end
   end
   
   def full?
