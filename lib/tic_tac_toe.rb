@@ -22,12 +22,12 @@ class TicTacToe
     @board[index] = token
   end
   
-  def position_take?(index)
+  def position_taken?(index)
     @board[index] == " "
   end 
     
   
   def valid_move?(index)
-    index 
+    index.between?(1,9) && position_
   
 end 
