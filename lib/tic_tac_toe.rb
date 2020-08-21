@@ -63,4 +63,12 @@ class TicTacToe
       retunr i
       end
   end
+  
+  def draw?
+    @board.each do |index|
+      if index == " "
+        return FALSE
+      else
+        retunr true
+      end
 end 
