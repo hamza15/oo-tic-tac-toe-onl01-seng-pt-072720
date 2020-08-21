@@ -66,4 +66,9 @@ class TicTacToe
   
   def draw?
     @board.all?{|index| index != " "}
+  end
+  
+  def over?
+    draw? || 
+  end 
 end 
