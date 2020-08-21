@@ -85,6 +85,11 @@ class TicTacToe
   end 
   
   def play 
+    while !over?
+      turn
+    end
     
+    if won?
+      puts 
   end 
 end 
