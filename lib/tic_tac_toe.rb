@@ -18,7 +18,9 @@ class TicTacToe
     input = gets.to_i - 1
   end
     
-
+  def move
+    
+  end
     
   
 end 
