@@ -88,8 +88,7 @@ class TicTacToe
     while !over?
       turn
     end
-    
     if won?
-      puts 
+      puts "Cwinner
   end 
 end 
